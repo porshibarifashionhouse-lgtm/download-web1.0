@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHELO MASTER BD</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background:
+radial-gradient(circle at top,#ffb30055,transparent 30%),
+linear-gradient(135deg,#000,#111,#241500);
+color:white;
+text-align:center;
+}
+
+.container{
+padding:30px 15px;
+}
+
+h1{
+font-size:38px;
+color:#ffb300;
+text-shadow:0 0 20px #ffb300;
+}
+
+.subtitle{
+color:#ddd;
+margin:15px;
+font-size:18px;
+}
+
+.app-box{
+width:230px;
+height:230px;
+margin:30px auto;
+border-radius:40px;
+background:#ffffff12;
+border:2px solid #ffb300;
+display:flex;
+align-items:center;
+justify-content:center;
+animation:pulse 2s infinite;
+}
+
+.app-box img{
+width:150px;
+}
+
+@keyframes pulse{
+50%{
+box-shadow:0 0 40px #ffb300;
+}
+}
+
+.btn{
+display:block;
+max-width:400px;
+margin:15px auto;
+padding:18px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+font-size:20px;
+font-weight:bold;
+}
+
+.download{
+background:linear-gradient(90deg,#ffb300,#ff5500);
+animation:glow 1.5s infinite;
+}
+
+.telegram{
+background:#008cff;
+}
+
+.social{
+display:flex;
+flex-direction:column;
+gap:12px;
+max-width:400px;
+margin:20px auto;
+}
+
+.youtube{
+background:linear-gradient(90deg,#ff0000,#ff4d4d);
+}
+
+.facebook{
+background:linear-gradient(90deg,#1877f2,#00a2ff);
+}
+
+.card{
+max-width:500px;
+margin:35px auto;
+padding:25px;
+background:#ffffff12;
+border:1px solid #ffffff33;
+border-radius:25px;
+backdrop-filter:blur(15px);
+}
+
+.card h2{
+color:#ffb300;
+margin-bottom:20px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:12px;
+}
+
+.stat-box{
+width:115px;
+padding:20px 10px;
+background:#00000066;
+border-radius:20px;
+border:1px solid #ffb300;
+box-shadow:0 0 20px #ffb30055;
+}
+
+.stat-icon{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.stat-box h3{
+font-size:26px;
+color:#ffb300;
+}
+
+.item{
+background:#00000066;
+padding:15px;
+margin:10px;
+border-radius:15px;
+font-size:16px;
+}
+
+.footer{
+margin-top:40px;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>KHELO MASTER BD</h1>
+
+<p class="subtitle">
+🔥 Official Free Fire Tournament Gaming App 🔥
+</p>
+
+<div class="app-box">
+<img src="logo.png">
+</div>
+
+<a class="btn download"
+href="https://www.mediafire.com/file/gm0bjogipvh63sl/KHELO+MASTER+BD.apk/file">
+⬇ ডাউনলোড করুন
+</a>
+
+<a class="btn telegram"
+href="https://t.me/khelomasterbd">
+✈ টেলিগ্রাম চ্যানেল
+</a>
+
+<!-- SOCIAL MEDIA -->
+<div class="social">
+
+<a class="btn youtube"
+href="https://youtube.com/@khelomasterbd?si=DraX5EbxgeJXWLGf"
+target="_blank">
+▶ YouTube Channel
+</a>
+
+<a class="btn facebook"
+href="https://www.facebook.com/profile.php?id=61591402322188"
+target="_blank">
+👍 Facebook Page
+</a>
+
+</div>
+
+<!-- COMMUNITY -->
+<div class="card" id="stats">
+
+<h2>📊 Our Community</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<div class="stat-icon">🎮</div>
+<h3 class="counter" data-target="100">0+</h3>
+<p>Tournament Played</p>
+</div>
+
+<div class="stat-box">
+<div class="stat-icon">👥</div>
+<h3 class="counter" data-target="5000">0+</h3>
+<p>Active Gamers</p>
+</div>
+
+<div class="stat-box">
+<div class="stat-icon">🏆</div>
+<h3 class="counter" data-target="100000">0+</h3>
+<p>Total Wins</p>
+</div>
+
+</div>
+</div>
+
+<!-- FEATURES -->
+<div class="card">
+
+<h2>🚀 App Features</h2>
+
+<div class="item">🎮 Free Fire Tournament</div>
+<div class="item">🏆 Clash Squad & BR Match</div>
+<div class="item">💰 Prize Winning System</div>
+<div class="item">⚡ Fast Match Update</div>
+
+</div>
+
+<div class="card">
+
+<h2>🌟 Why Choose Us</h2>
+
+<p>
+✔ Fair Tournament System<br><br>
+✔ Secure Gaming Platform<br><br>
+✔ Fast Support<br><br>
+✔ Professional Esports Experience
+</p>
+
+</div>
+
+<div class="footer">
+© 2026 KHELO MASTER BD<br>
+Free Fire Tournament Platform
+</div>
+
+</div>
+
+<script>
+
+let started=false;
+
+window.addEventListener("scroll",()=>{
+
+let section=document.getElementById("stats");
+let top=section.getBoundingClientRect().top;
+
+if(top < window.innerHeight && !started){
+
+started=true;
+
+document.querySelectorAll(".counter").forEach(counter=>{
+
+let target=Number(counter.dataset.target);
+let count=0;
+
+let timer=setInterval(()=>{
+
+count += target/100;
+
+if(count>=target){
+count=target;
+clearInterval(timer);
+}
+
+counter.innerHTML=Math.floor(count)+"+";
+
+},20);
+
+});
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
